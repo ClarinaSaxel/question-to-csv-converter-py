@@ -6,7 +6,7 @@ def glue_question_back_together(list):
     string=''
     for element in list:
         if any(element.startswith(s) for s in '123456789'):
-            string+=f'\n{element}'
+            string+=f'\t{element}'
             a.remove(element)
     a[1]+=string
     return a
